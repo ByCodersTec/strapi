@@ -9,11 +9,11 @@ const useTracking = () => {
   trackRef.current = (event, properties) => {
     if (uuid) {
       try {
-        axios.post('https://analytics.strapi.io/track', {
+        /*axios.post('https://analytics.strapi.io/track', {
           event,
           properties: { ...properties, projectType: strapi.projectType },
           uuid,
-        });
+        });*/
       } catch (err) {
         // Silent
       }
